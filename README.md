@@ -16,6 +16,9 @@ show databases;
 Create database blazers;<br>
 Query OK, 1 row affected (0.01 sec)
 
+
+<h1>Show Database</h1>
+
  Show databases;
 
 +--------------------+
@@ -34,9 +37,14 @@ Query OK, 1 row affected (0.01 sec)
 Use blazers;
   Database changed
 
+
+<h1>Creating Table</h1>
+
 Create table students(id int primary key auto_increment,name varchar(25) not null,age int(2) not null,gender char(3)not null);<br>
    Query OK, 0 rows affected, 1 warning (0.04 sec)
 
+
+<h1>Show Tables</h1>
 
 Show tables;
 +-------------------+
@@ -46,6 +54,8 @@ Show tables;
 +-------------------+
 1 row in set (0.00 sec)
 
+
+<h1>Describe Tables</h1>
 
 Desc students;
 +--------+-------------+------+-----+---------+----------------+
@@ -59,13 +69,19 @@ Desc students;
 4 rows in set (0.00 sec)
 
 
+<h1>Inserting Values<h1>
+
 Insert into students (name,age,gender) values('Haiden',19,'M');<br>
     Query OK, 1 row affected (0.01 sec)
 
 
+<h1>Inserting Values<h1>
+
 Insert into students (name,age,gender) values('Aswath',17,'M');<br>
     Query OK, 1 row affected (0.01 sec)
 
+
+<h1>Select Statement<h1>
 
 Select *from students;
 +----+--------+-----+--------+
@@ -77,6 +93,8 @@ Select *from students;
 2 rows in set (0.00 sec)
 
 
+<h1>Select Statement<h1>
+
 Select * from students where id=1;
 +----+--------+-----+--------+
 | id | name   | age | gender |
@@ -86,10 +104,14 @@ Select * from students where id=1;
 1 row in set (0.00 sec)
 
 
+<h1>Alter Table Statement<h1>
+
 Alter table students add degree varchar(20);<br>
     Query OK, 0 rows affected (0.03 sec)
     Records: 0  Duplicates: 0  Warnings: 0
 
+
+<h1>Select Statement<h1>
 
 Select *from students;
 +----+--------+-----+--------+--------+
@@ -101,10 +123,14 @@ Select *from students;
 2 rows in set (0.00 sec)
 
 
+<h1>Update Statement<h1>
+
 Update students set degree='+2' where id=1;<br>
     Query OK, 1 row affected (0.01 sec)
     Rows matched: 1  Changed: 1  Warnings: 0
 
+
+<h1>Select Statement<h1>
 
 Select *from students;
 +----+--------+-----+--------+--------+
@@ -116,9 +142,13 @@ Select *from students;
 2 rows in set (0.00 sec)
 
 
+<h1>Delete Statement<h1>
+
 Delete from students where id=1;<br>
     Query OK, 1 row affected (0.00 sec)
 
+
+<h1>Select Statement<h1>
 
 Select *from students;
 +----+--------+-----+--------+--------+
@@ -129,23 +159,23 @@ Select *from students;
 1 row in set (0.00 sec)
 
 
-Not Null:<br>
+<h1>Not Null:</h1><br>
       Create table Constraints(Firstname varchar(255) NOT NULL);
 
 
-Primary Key:<br>
+<h1>Primary Key:</h1><br>
       Create table Constraints(Id int(3) PRIMARY KEY AUTO_INCREMENT);
 
 
-Unique Key:<br>
+<h1>Unique Key:</h1><br>
       Create table Constraints(Email varchar(255) UNIQUE);
 
 
-Default:<br>
+<h1>Default:</h1><br>
       Create table Constraints(Department varchar(255) DEFAULT 'Tech');
 
 
-Check:<br>
+<h1>Check:</h1><br>
       Create table Constraints(Age int(2) NOT NULL, CHECK (Age>=21));
 
 
