@@ -123,7 +123,7 @@ Select *from students;
 2 rows in set (0.00 sec)
 
 
-<h1>Update Statement<h1>
+<h1>Update Statement<h1><br>
 
 Update students set degree='+2' where id=1;<br>
     Query OK, 1 row affected (0.01 sec)
