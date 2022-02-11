@@ -56,7 +56,7 @@ Show tables;
 
 <h1>Describe Tables</h1>
 
-Desc students;
+Desc students;<br>
 
 | Field  | Type        | Null | Key | Default | Extra          |
 |:--------|
