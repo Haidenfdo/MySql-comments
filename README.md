@@ -59,13 +59,10 @@ Show tables;
 Desc students;<br>
 
 | Field  | Type        | Null | Key | Default | Extra          |
-|:----||:----||:------||:-----|
+|:----|:----|:------|:-----|
 | id     | int         | NO   | PRI | NULL    | auto_increment |
-
 | name   | varchar(25) | NO   |     | NULL    |                |
-
 | age    | int         | NO   |     | NULL    |                |
-
 | gender | char(3)     | NO   |     | NULL    |                |
 
 4 rows in set (0.00 sec)
