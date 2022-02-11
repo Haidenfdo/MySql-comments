@@ -21,15 +21,14 @@ Query OK, 1 row affected (0.01 sec)
 
  Show databases;
 
-+--------------------+
 | Database           |
-+--------------------+
+|:----| 
 | blazers            |
 | information_schema |
 | mysql              |
 | performance_schema |
 | sys                |
-+--------------------+
+
 5 rows in set (0.00 sec)
 
 <h1>Changing Database</h1>
@@ -47,25 +46,25 @@ Create table students(id int primary key auto_increment,name varchar(25) not nul
 <h1>Show Tables</h1>
 
 Show tables;
-+-------------------+
+
 | Tables_in_blazers |
-+-------------------+
+|:----| 
 | students          |
-+-------------------+
+
 1 row in set (0.00 sec)
 
 
 <h1>Describe Tables</h1>
 
 Desc students;
-+--------+-------------+------+-----+---------+----------------+
+
 | Field  | Type        | Null | Key | Default | Extra          |
-+--------+-------------+------+-----+---------+----------------+
+|:----| 
 | id     | int         | NO   | PRI | NULL    | auto_increment |
 | name   | varchar(25) | NO   |     | NULL    |                |
 | age    | int         | NO   |     | NULL    |                |
 | gender | char(3)     | NO   |     | NULL    |                |
-+--------+-------------+------+-----+---------+----------------+
+
 4 rows in set (0.00 sec)
 
 
@@ -84,23 +83,23 @@ Insert into students (name,age,gender) values('Aswath',17,'M');<br>
 <h1>Select Statement<h1>
 
 Select *from students;
-+----+--------+-----+--------+
+
 | id | name   | age | gender |
-+----+--------+-----+--------+
+|:----| 
 |  1 | Haiden |  19 | M      |
 |  2 | Aswath |  17 | M      |
-+----+--------+-----+--------+
+
 2 rows in set (0.00 sec)
 
 
 <h1>Select Statement<h1>
 
 Select * from students where id=1;
-+----+--------+-----+--------+
+
 | id | name   | age | gender |
-+----+--------+-----+--------+
+|:----| 
 |  1 | Haiden |  19 | M      |
-+----+--------+-----+--------+
+
 1 row in set (0.00 sec)
 
 
@@ -114,12 +113,12 @@ Alter table students add degree varchar(20);<br>
 <h1>Select Statement<h1>
 
 Select *from students;
-+----+--------+-----+--------+--------+
+
 | id | name   | age | gender | degree |
-+----+--------+-----+--------+--------+
+|:----| 
 |  1 | Haiden |  19 | M      | NULL   |
 |  2 | Aswath |  17 | M      | NULL   |
-+----+--------+-----+--------+--------+
+
 2 rows in set (0.00 sec)
 
 
@@ -133,12 +132,12 @@ Update students set degree='+2' where id=1;<br>
 <h1>Select Statement<h1>
 
 Select *from students;
-+----+--------+-----+--------+--------+
+
 | id | name   | age | gender | degree |
-+----+--------+-----+--------+--------+
+|:----| 
 |  1 | Haiden |  19 | M      | +2     |
 |  2 | Aswath |  17 | M      | NULL   |
-+----+--------+-----+--------+--------+
+
 2 rows in set (0.00 sec)
 
 
@@ -151,11 +150,11 @@ Delete from students where id=1;<br>
 <h1>Select Statement<h1>
 
 Select *from students;
-+----+--------+-----+--------+--------+
+
 | id | name   | age | gender | degree |
-+----+--------+-----+--------+--------+
+|:----| 
 |  2 | Aswath |  17 | M      | NULL   |
-+----+--------+-----+--------+--------+
+
 1 row in set (0.00 sec)
 
 
@@ -188,11 +187,11 @@ Insert into marklist values(1,100,'A',2);<br>
 
 
 Select *from marklist;
-+--------+-------+-------+-------------+
+
 | studid | marks | grade | personal_id |
-+--------+-------+-------+-------------+
+|:----| 
 |      1 |   100 | A     |           2 |
-+--------+-------+-------+-------------+
+
 1 row in set (0.00 sec)
 
 
